@@ -40821,7 +40821,7 @@ struct BurnDriver BurnDrvmd_rickdang2 = {
 
 // Rick Dangerous DX (HB)
 static struct BurnRomInfo md_rickdangerousdxRomDesc[] = {
-	{ "Rick Dangerous DX (2025)(Z-Team).bin", 1572864, 0xf28df099, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
+	{ "Rick Dangerous DX v1.1 (2025)(Z-Team).bin", 1572864, 0x12e804a4, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
 };
 
 STD_ROM_PICK(md_rickdangerousdx)
@@ -40829,7 +40829,7 @@ STD_ROM_FN(md_rickdangerousdx)
 
 struct BurnDriver BurnDrvmd_rickdangerousdx = {
 	"md_rickdangerousdx", NULL, NULL, NULL, "2025",
-	"Rick Dangerous DX (HB)\0", NULL, "Z-Team", "Genesis / Mega Drive",
+	"Rick Dangerous DX v1.1 (HB)\0", NULL, "Z-Team", "Genesis / Mega Drive",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_16BIT_ONLY | BDF_HOMEBREW, 1, HARDWARE_SEGA_MEGADRIVE, GBF_PLATFORM, 0,
 	MegadriveGetZipName, md_rickdangerousdxRomInfo, md_rickdangerousdxRomName, NULL, NULL, NULL, NULL, MegadriveInputInfo, MegadriveDIPInfo,
